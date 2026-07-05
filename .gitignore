@@ -1,10 +1,14 @@
-# Book chapters (markdown text and local assets)
-book_chapters/
-book2_chapters/
-
-# PDF output files
-*.pdf
+# Publishing source, docs, covers, and generated outputs
+assets/
 book_out/
+docs/
+build_books.py
+translate_books.py
+*.pdf
+*.epub
+*.html
 
 # Python virtual environment
 .venv/
+__pycache__/
+.omx/
