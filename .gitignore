@@ -1,0 +1,10 @@
+# Book chapters (markdown text and local assets)
+book_chapters/
+book2_chapters/
+
+# PDF output files
+*.pdf
+book_out/
+
+# Python virtual environment
+.venv/

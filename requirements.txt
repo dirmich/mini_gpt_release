@@ -1,0 +1,18 @@
+torch>=2.0
+transformers>=4.40
+datasets>=2.18
+peft>=0.10
+tiktoken>=0.6
+regex
+accelerate
+matplotlib
+
+# 2권 (LLM 고급) 추가 패키지
+bitsandbytes>=0.43
+trl>=0.9
+sentence-transformers
+faiss-cpu
+chromadb
+rank_bm25
+einops
+# vllm  # 2권 6장 vLLM 실습용 (선택 설치, 용량이 크고 Colab GPU 환경 권장)
