@@ -22,6 +22,8 @@ h1 {
     border-bottom: 2px solid #333333;
     padding-bottom: 10px;
     page-break-before: always;
+    page-break-after: avoid;
+    break-after: avoid;
 }
 
 /* Section Title */
@@ -34,6 +36,8 @@ h2 {
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 5px;
     page-break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
 }
 
 /* Subsection Title */
@@ -44,12 +48,16 @@ h3 {
     margin-top: 10mm;
     margin-bottom: 4mm;
     page-break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
 }
 
 p {
     margin-top: 0;
     margin-bottom: 6mm;
     text-align: justify;
+    orphans: 3;
+    widows: 3;
 }
 
 /* Code Blocks */
@@ -141,4 +149,79 @@ hr {
     border: 0;
     border-top: 1px solid #dddddd;
     margin: 8mm 0;
+}
+
+/* Table of Contents Styling */
+#TOC {
+    page-break-after: always;
+    break-after: always;
+    margin-top: 20mm;
+}
+
+#TOC h2 {
+    font-size: 20pt;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 8px;
+    margin-bottom: 15mm;
+}
+
+#TOC ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#TOC ul ul {
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#TOC li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+#TOC ul ul {
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* Grid layout applied only to the wrapper row, leaving sub-ULs unaffected */
+.toc-item-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: end;
+    gap: 6px;
+    font-size: 11pt;
+}
+
+#TOC ul ul .toc-item-row {
+    font-size: 10pt;
+}
+
+.toc-item-row::after {
+    content: "";
+    border-bottom: 1.5px dotted #aaaaaa;
+    margin-bottom: 4px;
+    min-width: 10px;
+    display: block;
+}
+
+.toc-item-row a {
+    text-decoration: none;
+    color: #222222;
+    display: inline;
+}
+
+.toc-item-row a:hover {
+    color: #007acc;
+}
+
+.toc-item-row .toc-page {
+    font-weight: bold;
+    color: #444444;
+    white-space: nowrap;
+    text-align: right;
 }
