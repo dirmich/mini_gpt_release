@@ -4,6 +4,7 @@ book_out/
 docs/
 build_books.py
 translate_books.py
+prepare_sourcecode.py
 *.pdf
 *.epub
 *.html

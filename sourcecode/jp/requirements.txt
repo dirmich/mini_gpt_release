@@ -1,0 +1,18 @@
+torch>=2.0
+transformers>=4.40
+datasets>=2.18
+peft>=0.10
+tiktoken>=0.6
+regex
+accelerate
+matplotlib
+
+# 第2巻 (LLM 高度編) 追加パッケージ
+bitsandbytes>=0.43
+trl>=0.9
+sentence-transformers
+faiss-cpu
+chromadb
+rank_bm25
+einops
+# vllm  # 第2巻 第6章 vLLM 実習用 (選択インストール、容量が大きいため Colab GPU 環境を推奨)

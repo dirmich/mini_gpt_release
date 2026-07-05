@@ -1,0 +1,18 @@
+torch>=2.0
+transformers>=4.40
+datasets>=2.18
+peft>=0.10
+tiktoken>=0.6
+regex
+accelerate
+matplotlib
+
+# Volume 2 (Advanced LLM) Additional Packages
+bitsandbytes>=0.43
+trl>=0.9
+sentence-transformers
+faiss-cpu
+chromadb
+rank_bm25
+einops
+# vllm  # For Volume 2 Chapter 6 vLLM practice (Optional installation, large size; Colab GPU environment recommended)
